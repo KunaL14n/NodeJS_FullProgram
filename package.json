@@ -1,0 +1,24 @@
+{
+  "name": "nodejs_fullprogram",
+  "version": "1.0.0",
+  "description": "This Repository contains the codes and explanation on all topics of NodeJS from Basic to Advanced. This will help in learning NodeJS codes from scratch.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KunaL14n/NodeJS_FullProgram.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/KunaL14n/NodeJS_FullProgram/issues"
+  },
+  "homepage": "https://github.com/KunaL14n/NodeJS_FullProgram#readme",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
