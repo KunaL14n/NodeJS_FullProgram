@@ -1,0 +1,31 @@
+const fs = require('fs').promises;
+//Standard Synchronous Function Call
+fucntion calculateTotal(price, taxrate){
+  return price + (price*taxrate);
+}
+
+const total = calculateTotal(1000,0.18);
+console.log(`Synchronous Result : ${total}`);
+
+//Callback Function Call (passing a function as an argument)
+fucntion processOrder(orderId, callback){
+  console.log(`Processing order is #${orderId}...`);
+  setTimeout(()=>{                      //sets an delay (asynchronous mode) 
+     callback(`Order #${orderId} confirmed !`);
+  }, 1000);                             // It adds an delay of 1 second
+}
+
+processOrder(101, (status_message)=>{
+  console.log(`Callback Result: ${status_message}`);
+});
+
+//Async/Await Function Call (Modern way)
+async function readCOnfigFile(){
+  try{
+   //Simulating an async operation
+    const data = await Promise.resolve('{"env": "production" , "port":3000}');
+    console.log('Async/Await Result:',JSON.parse(data));
+} catch (error){
+  console.log('Error:', error.message);
+}
+}
