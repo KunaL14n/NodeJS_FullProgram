@@ -1,0 +1,81 @@
+VARIABLE & DATA TYPES:
+ 
+Declare variables at the top of their Scope(block of the code).
+Variable in JS are defined using either by the var, let or console keywords.
+
+eg: var varName = 'Value of the variable:' ;
+
+Rules: > JS is case sensitive.
+       > Can't start with digits,$ or _ .
+
+var x;                           //declare the variable.
+console.log(x);                  //will be undefined.
+
+var varName = 'variable name is :";
+console.log(varName);
+
+Problem with var is that error and bugs can arise.
+Using var before its declaration results in undefined rather than throwing an explicit execution error.
+
+DIFFERENCES BETWEEN LET & CONST:
+
+1)RE-ASSIGNMENT: (Value Change krna)
+  
+  LET => Let se bnaya gya variable's value can be changed afterwards.
+       Example: let age = 20;
+                age=21;              // this will update the value of age variable.
+  CONST=> const means constant (which cant be changed).Iski value ko hum baad mein change nhi krskte.
+       Example: const pi = 3.14;
+                pi = 3.15;           // Type Error : Assignment to constant variable.
+
+
+2)INITIALIZATION: 
+  
+LET => We can declare this even without giving any value to it .
+          its default value is undefined.
+
+       Example: let name;
+                name="Papoy";
+CONST => WE have to give it a value while defining.
+       Example : const city;                        //incorrect.
+                 const city = "Mississippi" ;       //correct
+
+
+3)BEHAVIOUR WITH OBJECTS & ARRAY :
+
+CONST => const ke case mein variable ka reference fixed hota h, lekin if its an object or array then hum 
+            uske andr ki properties or elements is added or changed.
+    For Ex:
+           const user = {name: "KunaL"};
+           user.name = "kunnu";            //correct(object ki value is changed/edited.
+     
+           user = {name: "Suresh"};         //Error Pura ka Pura object cant be changed. 
+
+
+*DATA TYPES
+ 
+ 1) JavaScript is Dynamically/Loosely Typed thenLanguage :
+    JS mein variable ka type Pehle se define or declare nhi krna pdta. Ek variable mein different types ka 
+    data store kr skte h .
+    
+    var foo = 42;        //idhr foo is a number 
+    foo = 'bar';         //foo is now a string
+    foo = true;          // now foo is a Boolean.
+
+ 2) MAIN DATA TYPES:
+    i)   Number
+    ii)  String
+    iii) Boolean
+    iv)  Null
+    v)   undefined
+
+ 3) 'type of' Operator:
+     
+      agr aapko find krna h ki kis variable mein kis type ka data is stored then we use the 'type of' operation.
+     
+      EX: let num = 500;
+          console.log(type of num);          //   O/P will be 'number'
+
+
+
+       
