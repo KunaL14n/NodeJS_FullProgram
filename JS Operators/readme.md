@@ -29,6 +29,8 @@ Operator	Example	Equivalent To
 /=	x /= 3	x = x / 3
 %=	x %= 3	x = x % 3
 **=	x **= 3	x = x ** 3
+---
+
 ##3. Comparison Operators
 Used to compare two values and return a boolean (true or false).
 
@@ -42,6 +44,7 @@ Operator	Description	Example	Result
 >=	Greater than or equal to	10 >= 10	true
 <=	Less than or equal to	5 <= 3	false
 Best Practice: Always prefer strict equality (=== and !==) over loose equality (== and !=) to avoid unexpected bugs caused by automatic type coercion.
+---
 
 ##4. Logical Operators
 Used to combine or invert boolean expressions.
@@ -66,6 +69,8 @@ JavaScript
 const age = 20;
 const status = age >= 18 ? "Adult" : "Minor";
 console.log(status); // "Adult"
+
+---
 ##6. Nullish Coalescing (??) & Optional Chaining (?.)
 Modern operators introduced in ES2020 for safely handling null and undefined.
 
