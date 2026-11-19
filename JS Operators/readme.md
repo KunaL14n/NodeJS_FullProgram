@@ -85,6 +85,8 @@ console.log(count ?? 10); // 0  (0 is not null/undefined)
 
 const user = { profile: { name: "Aarav" } };
 console.log(user?.address?.city); // undefined (no TypeError thrown)
+
+---
 ##7. Type Operators
 Used to check the data type or instance of a value.
 
@@ -96,6 +98,8 @@ JavaScript
 console.log(typeof "Hello");       // "string"
 console.log(typeof 42);            // "number"
 console.log([1, 2] instanceof Array); // true
+---
+
 ##8. Bitwise Operators
 Perform operations on 32-bit binary representations of numbers.
 
