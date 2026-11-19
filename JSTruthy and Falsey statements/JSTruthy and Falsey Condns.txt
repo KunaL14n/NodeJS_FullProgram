@@ -1,0 +1,24 @@
+JS Truthy and falsey conditions ka simple meaning h ki jb kisi value ko "if" condition ya Boolean context mein use koya jata h , toh JS use "true" or "False" ki terah treat krta h .this process is called Coercion.
+
+1).Falsey Values(Only 8 hote h ):
+
+Agr in 8 mein se koi value "if(Value)" mein aati h , toh that is considered as  False :
+ 
+  . false       -- Boolean false.
+  . 0, -0, 0n   -- Zero, negative zero, BigInt Zero
+  . "", '' , `` -- Empty String. 
+  . null        -- no value(intentional absence)
+  . undefined   -- variable created but no value is assigned
+  . NaN         -- Not A Number.
+
+2) Truthy Values :
+  Inn 8 Falsey values ke except hr cheez is truthy even if they seems to be confusing.
+
+  . Non- Empty strings jaise '0',"false" or " " ( only single space).
+  . Koi bhi NON-Zero numbers like -5 or infinity.
+  . Empty array [] aur empty object{}.
+  . Empty function "function() {} ".
+
+
+
+
